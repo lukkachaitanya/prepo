@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <LinearLayout
+<<<<<<< HEAD
         android:id="@+id/llHeader"
+=======
+>>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
         android:layout_width="match_parent"
         android:layout_height="50dip"
         android:layout_margin="@dimen/margin_2">
@@ -16,11 +22,15 @@
             android:id="@+id/tvTitle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+<<<<<<< HEAD
             android:layout_weight="1"
+=======
+>>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
             android:drawableLeft="@drawable/navbarmenuicongold"
             android:drawablePadding="@dimen/margin_10"
             android:gravity="center_vertical"
             android:textAppearance="?android:textAppearanceLarge" />
+<<<<<<< HEAD
 
 
         <Button
@@ -30,6 +40,8 @@
             android:layout_marginRight="@dimen/margin_5"
             android:text="SAVE"
             android:visibility="gone" />
+=======
+>>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
     </LinearLayout>
 
 
@@ -60,6 +72,7 @@
                 android:id="@+id/llMenu"
                 android:layout_width="@dimen/margin_240"
                 android:layout_height="match_parent"
+<<<<<<< HEAD
                 android:layout_gravity="left"
                 android:background="@color/background_floating_material_dark"
                 android:orientation="vertical"
@@ -75,11 +88,20 @@
                     android:text="PREPO"
                     android:textColor="@color/reserve_black"
                     android:textSize="@dimen/abc_text_size_title_material" />
+=======
+                android:background="@color/background_floating_material_dark"
+                android:orientation="vertical"
+                android:visibility="visible">
+>>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
 
                 <ListView
                     android:id="@+id/lvMenu"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+<<<<<<< HEAD
+=======
+                    android:layout_gravity="start"
+>>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
                     android:background="@color/list_background"
                     android:cacheColorHint="@null"
                     android:choiceMode="singleChoice"

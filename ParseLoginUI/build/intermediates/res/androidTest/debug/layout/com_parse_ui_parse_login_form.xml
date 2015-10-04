@@ -51,4 +51,8 @@
         android:layout_marginBottom="@dimen/com_parse_ui_small_vertical_spacing"
         android:text="@string/com_parse_ui_forgot_password_button_label" />
 </LinearLayout>
+<<<<<<< HEAD
 <!-- From: file:/C:/Users/Anil.Jain/Downloads/New%20folder/booktable-master/ParseLoginUI/src/main/res/layout/com_parse_ui_parse_login_form.xml --><!-- From: file:/C:/Users/Anil.Jain/Downloads/New%20folder/booktable-master/ParseLoginUI/build/intermediates/bundles/debug/res/layout/com_parse_ui_parse_login_form.xml -->
+=======
+<!-- From: file:/C:/Users/lc/Desktop/lc_prepo/booktable-master/ParseLoginUI/src/main/res/layout/com_parse_ui_parse_login_form.xml --><!-- From: file:/C:/Users/lc/Desktop/lc_prepo/booktable-master/ParseLoginUI/build/intermediates/bundles/debug/res/layout/com_parse_ui_parse_login_form.xml -->
+>>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580

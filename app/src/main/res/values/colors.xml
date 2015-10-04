@@ -104,6 +104,9 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <color name="textbox_background">#fff5f5f5</color>
     <color name="white_67">#ffababab</color>
+<<<<<<< HEAD
     <color name="header_bg">#F9ECB8</color>
     <color name="content_bg">#FF4F5B</color>
+=======
+>>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
 </resources>

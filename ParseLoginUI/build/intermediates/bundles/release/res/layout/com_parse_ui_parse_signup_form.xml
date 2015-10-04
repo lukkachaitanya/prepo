@@ -67,4 +67,8 @@
         android:text="@string/com_parse_ui_create_account_button_label" />
 
 </LinearLayout>
+<<<<<<< HEAD
 <!-- From: file:/C:/Users/Anil.Jain/Downloads/New%20folder/booktable-master/ParseLoginUI/src/main/res/layout/com_parse_ui_parse_signup_form.xml -->
+=======
+<!-- From: file:/C:/Users/lc/Desktop/lc_prepo/booktable-master/ParseLoginUI/src/main/res/layout/com_parse_ui_parse_signup_form.xml -->
+>>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580

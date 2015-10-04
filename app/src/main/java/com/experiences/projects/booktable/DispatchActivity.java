@@ -11,6 +11,10 @@ public class DispatchActivity extends ParseLoginDispatchActivity {
 
     @Override
     protected Class<?> getTargetClass() {
+<<<<<<< HEAD
         return SplashScreenActivity.class;
+=======
+        return HotelList.class;
+>>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
     }
 }

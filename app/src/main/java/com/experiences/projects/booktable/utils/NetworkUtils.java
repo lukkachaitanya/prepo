@@ -87,6 +87,7 @@ public class NetworkUtils {
         return domain.startsWith("www.") ? domain.substring(4) : domain;
     }
 
+<<<<<<< HEAD
     /**
      * Method to check Network Connections
      * @param context
@@ -105,5 +106,7 @@ public class NetworkUtils {
     }
 
 
+=======
+>>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
 
 }
