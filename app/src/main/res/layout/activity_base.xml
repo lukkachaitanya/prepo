@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_margin="@dimen/margin_2">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/navbarmenuicongold"
+            android:drawablePadding="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:textAppearanceLarge" />
+    </LinearLayout>
+
+
+    <android.support.v4.widget.DrawerLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/flMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <LinearLayout
+                android:id="@+id/llMenu"
+                android:layout_width="@dimen/margin_240"
+                android:layout_height="match_parent"
+                android:background="@color/background_floating_material_dark"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ListView
+                    android:id="@+id/lvMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="@color/list_background"
+                    android:cacheColorHint="@null"
+                    android:choiceMode="singleChoice"
+                    android:divider="@color/list_divider"
+                    android:dividerHeight="1.0dip"
+                    android:fadingEdge="none"
+                    android:listSelector="@drawable/nav_drawer_list_selector"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
