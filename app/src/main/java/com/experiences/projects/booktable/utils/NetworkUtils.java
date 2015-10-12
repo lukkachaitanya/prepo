@@ -87,26 +87,5 @@ public class NetworkUtils {
         return domain.startsWith("www.") ? domain.substring(4) : domain;
     }
 
-<<<<<<< HEAD
-    /**
-     * Method to check Network Connections
-     * @param context
-     * @return boolean value
-     */
-    public static boolean isNetworkConnectionAvailable(Context context)
-    {
-        boolean isNetworkConnectionAvailable = false;
-
-        ConnectivityManager connectivityManager = (ConnectivityManager)context.getSystemService("connectivity");
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-
-        if(activeNetworkInfo != null)
-            isNetworkConnectionAvailable = activeNetworkInfo.getState() == NetworkInfo.State.CONNECTED;
-        return isNetworkConnectionAvailable;
-    }
-
-
-=======
->>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
 
 }

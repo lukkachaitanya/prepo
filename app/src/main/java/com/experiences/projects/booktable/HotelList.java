@@ -1,8 +1,16 @@
 package com.experiences.projects.booktable;
 
+
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,12 +18,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.parse.FindCallback;
@@ -28,23 +36,28 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
-public class HotelList extends BaseActivity {
+public class HotelList extends ActionBarActivity {
 
-    private Context context;
-    private HotelListAdapter hotelAdapter;
-    private LinearLayout llHotelList;
+    Context context;
+    HotelListAdapter hotelAdapter;
+
     @Override
-    public void createActivity() {
-//        setContentView(R.layout.activity_hotel_list);
-        llHotelList = (LinearLayout)layoutInflater.inflate(R.layout.activity_hotel_list,null);
-        llContent.addView(llHotelList,new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT));
+    protected void onCreate(Bundle savedInstanceState) {
+        getWindow().requestFeature(Window.FEATURE_ACTION_BAR);
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_hotel_list);
+
         context = this;
-        tvTitle.setText("Hotel List");
+
+
         ArrayList<ParseObject> hotelInfo = new ArrayList<ParseObject>();
-        setTypeFace(llHotelList);
+
         hotelAdapter = new HotelListAdapter(context, 0, hotelInfo);
 
         ListView hotelList = (ListView) findViewById(R.id.lv_hoste_list);
@@ -60,8 +73,8 @@ public class HotelList extends BaseActivity {
         });
 
         fetchHotelList();
-    }
 
+    }
 
     private void fetchHotelList() {
         ParseQuery<ParseObject> hotelQuery = ParseQuery.getQuery("Hotel");

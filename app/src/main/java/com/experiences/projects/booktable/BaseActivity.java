@@ -1,21 +1,16 @@
 package com.experiences.projects.booktable;
 
 import android.app.Activity;
-<<<<<<< HEAD
 import android.content.Intent;
-=======
->>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-<<<<<<< HEAD
 import android.widget.AdapterView;
-=======
->>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,24 +20,22 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.experiences.projects.booktable.utils.ApplicationConstants;
+import com.experiences.projects.booktable.utils.Preference;
 
 /**
  * Created by lc on 9/19/2015.
  */
-public abstract class BaseActivity extends Activity
+public abstract class BaseActivity extends FragmentActivity
 {
     public TextView tvTitle;
-<<<<<<< HEAD
     public LinearLayout llContent,llHeader;
     public LayoutInflater layoutInflater;
     public ListView lvMenu;
+    public ImageView ivMenu;
+    public ImageView ivBack;
     public Button btnSave;
-=======
-    public LinearLayout llContent;
-    public LayoutInflater layoutInflater;
-    public ListView lvMenu;
->>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
     private DrawerLayout drawerLayout;
+    public Preference preferenceUtils;
     private String menuItems [] = {"REQUEST A TABLE","REQUESTS","RESERVATIONS","ACCOUNT","INVITE FRIENDS","ABOUT"};
     private int imageIcons [] = {R.drawable.findatable,R.drawable.detailviewrestaurant,R.drawable.reservations,R.drawable.account,R.drawable.share_icon_drawer,R.drawable.about};
     @Override
@@ -52,7 +45,7 @@ public abstract class BaseActivity extends Activity
         defineControls();
         createActivity();
 
-        tvTitle.setOnClickListener(new View.OnClickListener() {
+        ivMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (drawerLayout.isDrawerOpen(Gravity.START)) {
@@ -62,7 +55,13 @@ public abstract class BaseActivity extends Activity
                 }
             }
         });
-<<<<<<< HEAD
+
+        ivBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         lvMenu.setOnItemClickListener(new AdapterView.OnItemClickListener()
         {
@@ -81,8 +80,6 @@ public abstract class BaseActivity extends Activity
                         startActivity(intent);
             }
         });
-=======
->>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
     }
 
     @Override
@@ -109,13 +106,13 @@ public abstract class BaseActivity extends Activity
         layoutInflater  =  getLayoutInflater();
         tvTitle         = (TextView)findViewById(R.id.tvTitle);
         llContent       = (LinearLayout)findViewById(R.id.llContent);
-<<<<<<< HEAD
         btnSave         = (Button)findViewById(R.id.btnSave);
+        ivMenu           = (ImageView)findViewById(R.id.ivMenu);
+        ivBack           = (ImageView)findViewById(R.id.ivBack);
         llHeader        = (LinearLayout)findViewById(R.id.llHeader);
-=======
->>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
         lvMenu          = (ListView)findViewById(R.id.lvMenu);
         drawerLayout    = (DrawerLayout)findViewById(R.id.drawerLayout);
+        preferenceUtils = new Preference(BaseActivity.this);
         tvTitle.setTypeface(ApplicationConstants.TYPEFACE_NORMAL);
         lvMenu.setAdapter(new MenuAdapter());
     }
@@ -131,11 +128,7 @@ public abstract class BaseActivity extends Activity
         }
 
         @Override
-<<<<<<< HEAD
         public View getView(final int position, View convertView, ViewGroup parent) {
-=======
-        public View getView(int position, View convertView, ViewGroup parent) {
->>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
 
             convertView = (LinearLayout)layoutInflater.inflate(R.layout.menu_list_item, null);
             ImageView ivMenuItem = (ImageView)convertView.findViewById(R.id.ivMenuItem);
@@ -143,7 +136,6 @@ public abstract class BaseActivity extends Activity
             ivMenuItem.setImageResource(imageIcons[position]);
             tvMenuTitle.setText(menuItems[position]);
             tvMenuTitle.setTypeface(ApplicationConstants.TYPEFACE_NORMAL);
-<<<<<<< HEAD
 
 //            convertView.setOnClickListener(new View.OnClickListener() {
 //                @Override
@@ -160,8 +152,6 @@ public abstract class BaseActivity extends Activity
 //                        startActivity(intent);
 //                }
 //            });
-=======
->>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
             return convertView;
         }
 

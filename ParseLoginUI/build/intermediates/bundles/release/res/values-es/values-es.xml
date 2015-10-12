@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
-    <!-- From: file:/C:/Users/Anil.Jain/Downloads/New%20folder/booktable-master/ParseLoginUI/src/main/res/values-es/strings.xml -->
-=======
-    <!-- From: file:/C:/Users/lc/Desktop/lc_prepo/booktable-master/ParseLoginUI/src/main/res/values-es/strings.xml -->
->>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
+    <!-- From: file:/C:/Users/lc/Desktop/prepo_menu/booktable-master/ParseLoginUI/src/main/res/values-es/strings.xml -->
     <eat-comment/>
     <plurals name="com_parse_ui_password_too_short_toast">
         <item quantity="one">La contraseña debe tener al menos %d caracteres</item>

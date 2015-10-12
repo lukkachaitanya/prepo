@@ -25,8 +25,4 @@
         <include layout="@layout/com_parse_ui_parse_login_third_party_section" />
     </LinearLayout>
 </LinearLayout>
-<<<<<<< HEAD
-<!-- From: file:/C:/Users/Anil.Jain/Downloads/New%20folder/booktable-master/ParseLoginUI/src/main/res/layout-land/com_parse_ui_parse_login_fragment.xml --><!-- From: file:/C:/Users/Anil.Jain/Downloads/New%20folder/booktable-master/ParseLoginUI/build/intermediates/bundles/debug/res/layout-land/com_parse_ui_parse_login_fragment.xml -->
-=======
-<!-- From: file:/C:/Users/lc/Desktop/lc_prepo/booktable-master/ParseLoginUI/src/main/res/layout-land/com_parse_ui_parse_login_fragment.xml --><!-- From: file:/C:/Users/lc/Desktop/lc_prepo/booktable-master/ParseLoginUI/build/intermediates/bundles/debug/res/layout-land/com_parse_ui_parse_login_fragment.xml -->
->>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
+<!-- From: file:/C:/Users/lc/Desktop/prepo_menu/booktable-master/ParseLoginUI/src/main/res/layout-land/com_parse_ui_parse_login_fragment.xml --><!-- From: file:/C:/Users/lc/Desktop/prepo_menu/booktable-master/ParseLoginUI/build/intermediates/bundles/debug/res/layout-land/com_parse_ui_parse_login_fragment.xml -->

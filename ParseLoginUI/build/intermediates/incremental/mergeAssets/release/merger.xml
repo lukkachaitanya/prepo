@@ -1,6 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<merger version="3"><dataSet config="main"><source path="C:\Users\Anil.Jain\Downloads\New folder\booktable-master\ParseLoginUI\src\main\assets"/></dataSet><dataSet config="release"><source path="C:\Users\Anil.Jain\Downloads\New folder\booktable-master\ParseLoginUI\src\release\assets"/></dataSet></merger>
-=======
-<merger version="3"><dataSet config="main"><source path="C:\Users\lc\Desktop\lc_prepo\booktable-master\ParseLoginUI\src\main\assets"/></dataSet><dataSet config="release"><source path="C:\Users\lc\Desktop\lc_prepo\booktable-master\ParseLoginUI\src\release\assets"/></dataSet></merger>
->>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
+<merger version="3"><dataSet config="main"><source path="C:\Users\lc\Desktop\prepo_menu\booktable-master\ParseLoginUI\src\main\assets"/></dataSet><dataSet config="release"><source path="C:\Users\lc\Desktop\prepo_menu\booktable-master\ParseLoginUI\src\release\assets"/></dataSet></merger>

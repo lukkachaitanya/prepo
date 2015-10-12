@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<<<<<<< HEAD
-    <!-- From: file:/C:/Users/Anil.Jain/Downloads/New%20folder/booktable-master/ParseLoginUI/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.1/res/values-hi/values.xml -->
-=======
-    <!-- From: file:/C:/Users/lc/Desktop/lc_prepo/booktable-master/ParseLoginUI/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.1/res/values-hi/values.xml -->
->>>>>>> c67a030e8231b613cc90bf5151969b1a2ed50580
+    <!-- From: file:/C:/Users/lc/Desktop/prepo_menu/booktable-master/ParseLoginUI/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.1/res/values-hi/values.xml -->
     <eat-comment/>
     <string name="messenger_send_button_text">भेजें</string>
 </resources>
