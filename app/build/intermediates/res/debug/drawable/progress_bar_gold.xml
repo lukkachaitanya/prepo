@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="@color/reserve_bid_border" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <solid android:color="@color/reserve_gray" />
+            </shape>
+        </clip>
+    </item>
+</layer-list><!-- From: file:/C:/Users/lc/Desktop/prepo_menu/booktable-master/app/src/main/res/drawable/progress_bar_gold.xml -->
